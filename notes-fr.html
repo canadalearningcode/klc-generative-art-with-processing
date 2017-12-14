@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Kids Learning Code</title>
+  <link rel="stylesheet" href="framework/css/slideshow.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/fonts.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/highlightjs/github.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/styles.css" data-noprefix>
+  <link rel="shortcut icon" href="framework/img/favicon.ico">
+
+  <!-- S'occupe des préfixes CSS 3 -->
+  <script src="framework/scripts/prefixfree.min.js"></script>
+
+  <!-- Ouvre tous les liens dans une nouvelle fenêtre -->
+  <base target="_blank">
+</head>
+
+<!-- Barre de progression / temps : définissez la durée de la présentation en minutes à l'aide de « data-duration ». -->
+<body class="en" data-duration="360">
+
+
+  <main>
+
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        ##Guide pour les formateurs
+
+        ##Kids Learning Code : L'art génératif avec Processing
+        <br>
+
+        #TABLE DES MATIÈRES
+        ###<a href="#slide2" target="_self">Utilisation de Processing</a>
+        ###<a href="#slide3" target="_self">Ordre du jour</a>
+        ###<a href="#slide4" target="_self">Introduction</a>
+        ###<a href="#slide5" target="_self">Programmation en groupe</a>
+        ###<a href="#slide6" target="_self">Programmation individuelle</a>
+        ###<a href="#slide7" target="_self">Activité hors ligne (facultative)</a>
+        ###<a href="#slide8" target="_self">Conclusion</a>
+
+        <br>
+        #Utilisation de Processing
+
+        Processing utilise un langage inspiré du Java. Il est fréquemment employé dans les arts numériques, les nouveaux médias et la conception visuelle. L'environnement lui-même sert à programmer dans ce que l'on appelle le Sketchbook, où des programmes peuvent être sauvegardés et visualisés instantanément. Pendant cet atelier, les sketches seront sauvegardés en ligne au <a href="https://www.openprocessing.org/">openprocessing.org</a> avec Processing.js. Voici quelques ressources pour commencer :
+
+        * Processing : <a href="https://processing.org/reference/">Référence officielle en anglais</a>. <a href="https://fr.flossmanuals.net/processing/introduction/">Référence non officielle en français</a>.
+        * <a href="https://processing.org/download">Télécharger Processing</a> (option hors ligne, si la version en ligne n'est pas disponible)
+        * Processing.js : <a href="http://processingjs.org/articles/p5QuickStart.html#quickstart">Guide de démarrage</a> (en anglais)
+        * Consulter des <a href="https://www.openprocessing.org/browse#">exemples</a> dans OpenProcessing
+
+        <br>
+        #Ordre du jour
+
+        ![intro icon](framework/img/workshop/intro-icon2.png) Introduction (30 minutes)
+
+        ![code icon](framework/img/workshop/code-icon2.png) Programmation en groupe (1 heure)
+
+        ![laptop icon](framework/img/workshop/laptop-icon2.png) Séance de programmation individuelle (1,5 heure)
+
+        <br>
+        #Introduction
+
+        ##Script d'ouverture
+
+        Bienvenue à l'atelier de Kids Learning Code « L'art génératif avec Processing »! Nous sommes contents que vous soyez là et nous espérons que vous êtes prêts à apprendre beaucoup de choses.
+
+        Y a-t-il des gens qui sont déjà assisté à l'un de nos ateliers ou participé à l'un de nos camps?
+        (Si certaines apprenantes lèvent la main, demandez-leur quels sont les ateliers auxquels ils ont participé.)
+
+        Nous avons commencé à organiser des ateliers et des camps pour les filles dans le cadre du programme Girls Learning Code en 2012. À la demande de parents ayant des garçons, nous avons démarré Kids Learning Code en 2013. Depuis, nous sommes présents dans plus de 29 villes du Canada et avons enseigné la programmation à plus de 19 000 enfants!
+
+        Avant de commencer l'atelier, voici quelques points à aborder :
+
+        * <strong>Salle de bain :</strong> Qui sait où sont les toilettes? (Demandez aux apprenantes de préciser leur emplacement.) Si vous avez besoin d'aller aux toilettes, amenez une partenaire avec vous.
+        * <strong>Boire de l'eau :</strong> Si vous avez amené une bouteille d'eau, vous pouvez la garder sur votre bureau, mais assurez-vous de garder le couvercle fermé. Si vous n'avez pas de bouteille d'eau, les mentors peuvent aller chercher un verre d'eau pour vous plus tard à condition que vous gardiez le verre loin des ordinateurs.
+        * <strong>Pause / collation :</strong> Nous prendrons une pause de 10 minutes pour manger une collation ou nous dégourdir les jambes. Si vous avez une collation (sans arachides), mangez-la à l'avant de la classe, puis nettoyez les miettes et jetez l'emballage quand vous avez terminé.
+
+        ##Diapositives d'introduction
+
+        <table style="font-size:2rem;">
+            <tr>
+              <td><strong style="background:#00a076; color:white; font-size:3.2rem;">Diapositives</strong></td>
+              <td><strong style="background:#00a076; color:white; font-size:3.2rem;">Notes</strong></td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/1.png" alt="slide"></td>
+              <td> J'aimerais vous présenter des gens très importants pour nous : les mentors!
+              <br>
+
+              <i>Demandez aux mentors de vous rejoindre à l'avant de la classe, de dire leur nom et de nommer l'un de leurs sites ou jeux préférés.</i>
+              <br><br>
+              Les mentors seront là pour vous aider si vous avez des problèmes. N'hésitez pas à leur poser des questions en cas de pépin, ou à leur montrer vos super projets! </td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/2.png" alt="slide"></td>
+              <td> (Après avoir choisi l'activité, ajoutez le titre dans cette diapositive.)</td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/3.png" alt="slide"></td>
+              <td>
+                <ol>
+                    <li><strong>Demandez de l'aide</strong> : Si vous êtes coincées ou avez des problèmes, travaillez avec votre voisine ou levez la main pour poser des questions à la formatrice ou à un mentor.
+                    <li><strong>Soyez présentes</strong>: Nous souhaitons vraiment que vous appreniez beaucoup pendant l'atelier. Assurez-vous de prêter attention au cours et de suivre pendant les activités.
+                    <li><strong>Faites de votre mieux</strong>: Même les meilleurs programmeurs ont parfois de la difficulté. Nous ne nous attendons pas à ce tout soit parfait la première fois, mais nous voulons que vous fassiez de votre mieux. N'ayez pas peur d'essayer de nouvelles choses et de vous tromper!</td>
+                  </ol>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/4.png" alt="slide"></td>
+              <td> (Écouter 2 ou 3 réponses)</td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/5.png" alt="slide"></td>
+              <td> (Le temps idéal pour l'activité hors ligne « Le robot »)</td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/6.png" alt="slide"></td>
+              <td> Qui a entendu parler de Processing ou l'a déjà utilisé?</td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/7.png" alt="slide"></td>
+              <td> Aujourd'hui, nous créerons des oeuvres numériques dont l'apparence peut être modifiée par l'utilisateur, comme dans cette oeuvre-ci.</td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/8.png" alt="slide"></td>
+              <td> (Écouter 2 ou 3 réponses)</td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/9.png" alt="slide"></td>
+              <td> Voici quelques exemples d'art génératif. Les exemples ont-ils quelque chose en commun?</td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/10-2.png" alt="slide"></td>
+              <td> (Écouter 2 ou 3 réponses)</td>
+            </tr><tr>
+              <td><img src="framework/img/workshop/slides/11.png" alt="slide"></td>
+              <td> Q : Que veut dire l'expression à « source ouverte » ou « open source »? (R : Elle désigne quelque chose de gratuit (comme un logiciel ou un site) pouvant être modifié par tout le monde.)
+              <br><br>
+              Q : Quand nous dessinons un cercle sur papier, est-il toujours parfait? Quand l'ordinateur dessine un cercle pour nous, est-il toujours parfait?</td>
+            </tr><tr>
+              <td><img src="framework/img/workshop/slides/12-2.png" alt="slide"></td>
+              <td> Le premier exemple est ce à quoi nous pensons quand nous faisons des graphiques en mathématiques. Notre canevas dans Processing est un peu différent. Il ressemble au deuxième exemple, où le point de départ est en haut à gauche.
+              </td>
+            </tr><tr>
+              <td><img src="framework/img/workshop/slides/13.png" alt="slide"></td>
+              <td> Processing a été créé avec des actions préprogrammées, c'est-à-dire, des fonctions. Par exemple, il comprend « setup » (préparation) et « draw » (dessiner), car il a été programmé pour comprendre ces actions.</td>
+            </tr><tr>
+              <td><img src="framework/img/workshop/slides/14.png" alt="slide"></td>
+              <td> Q : Qu'est-ce qu'une séquence?
+              <br> R : L'ordre selon lequel des événements se déroulent. (Premièrement, A. Puis, B. Ensuite, C. Ainsi de suite.)
+              <br><br>
+              Q : Si l'on dessine un visage, par exemple, quel est le premier élément à dessiner? (R : Premièrement, la tête / n'importe quoi en arrière-plan. Puis, les yeux, le nez, etc.)</td>
+            </tr><tr>
+              <td><img src="framework/img/workshop/slides/15.png" alt="slide"></td>
+              <td> Les ordinateurs communiquent en binaire, un langage composé de « 1 » et de « 0 ». Habituellement, 1 = vrai, 0 = faux.
+              <br><br>
+              Exemples d'expressions :
+              <br>SI il pleut...   SINON...
+              <br>SI j'ai faim...  SINON...
+              <br>SI c'est l'été...   SINON...
+              </td>
+            </tr><tr>
+              <td><img src="framework/img/workshop/slides/16.png" alt="slide"></td>
+              <td> Pensez à l'algèbre en mathématiques : il faut trouver la solution de x. Dans ce cas-ci, nous décidons de la valeur de x et l'ordinateur se souvient de cette valeur pour nous.</td>
+            </tr><tr>
+              <td><img src="framework/img/workshop/slides/17.png" alt="slide"></td>
+              <td> Ici, nous créons une nouvelle variable, qui est un nombre entier (un « integer », alias « int »), et nous lui donnons la valeur de 3.
+              <br><br>
+              (Demandez à tout le monde de se lever et de faire les actions en grand groupe, p. ex. sauter 3 fois tous ensemble)</td>
+            </tr><tr>
+              <td><img src="framework/img/workshop/slides/18.png" alt="slide"></td>
+              <td> Avant de commencer à programmer dans Processing, voici quelques rappels :</td>
+            </tr>
+          </table>
+
+        <br>
+        #Programmation en groupe
+
+        * Faites chaque étape à l'aide des diapositives (après « On programme! ») et demandez au groupe de suivre sur leur ordinateur.
+        * Assurez-vous que tout le monde sélectionne le mode « Processing.js » (en haut, sous « Settings »).
+        * S'il y a un tableau blanc, écrivez-y les fonctions principales pendant les étapes pour s'y référer pendant la séance de programmation (ou demandez à un mentor de les écrire). <i>Révisez les raccourcis de clavier (ctrl+C, ctrl+V, ctrl+F) et affichez-les à l'avant.</i>
+        * Pendant la programmation en groupe, ouvrez openprocessing.org dans un autre onglet, et copier-collez le texte après chaque étape. Cliquez sur « Run » (l'icône de lecture) pour visualiser le tout.
+        * Ayez le document des <a href="https://docs.google.com/document/d/1ByGxNxk3TQOFi2SX4z99EekIv7sFyjZ5Qs21VJ265SQ/edit?usp=sharing">défis de programmation</a> à portée de main pour les apprenantes avancées.
+        * Enseignez aux apprenantes comment sauvegarder un projet (« Save » > Nom du projet > « Submit ») et rappelez-leur de sauvegarder leur travail très souvent!
+
+        ##Diapositives pour la programmation en groupe
+
+        <table style="font-size:2rem;">
+            <tr>
+              <td><strong style="background:#00a076; color:white; font-size:3.2rem;">Diapositives</strong></td>
+              <td><strong style="background:#00a076; color:white; font-size:3.2rem;">Notes</strong></td>
+            </tr>
+            <tr>
+              <td><img src="framework/img/workshop/slides/19.png" alt="slide"></td>
+              <td> C'est le temps de programmer en groupe!</td>
+            </tr><tr>
+              <td><img src="framework/img/workshop/slides/20.png" alt="slide"></td>
+              <td> Nous utiliserons OpenProcessing pour enregistrer nos sketches Processing. OpenProcessing est un environnement en ligne gratuit servant à partager ses créations numériques et à regarder les créations des autres. </td>
+            </tr><tr>
+              <td><img src="framework/img/workshop/slides/21-2.png" alt="slide"></td>
+              <td> (Affichez cette diapositive pendant que les apprenantes se connectent.)</td>
+            </tr><tr>
+              <td><img src="framework/img/workshop/slides/22-2.png" alt="slide"></td>
+              <td> *Très important* : Assurez-vous de sélectionner le mode « Processing.js » (sous « Settings »). Comme le code initial P5.js ne fonctionnera plus, nous pouvons l'effacer.</td>
+            </tr><tr>
+              <td><img src="framework/img/workshop/slides/23-2.png" alt="slide"></td>
+              <td> Tapez ce code, puis cliquez sur « Run » (l'icône de lecture en haut). Ainsi, nous préparerons notre canevas.
+              <br><br>
+              Remplacez les « 600 » par un autre nombre.</td>
+            </tr><tr>
+              <td><img src="framework/img/workshop/slides/24-2.png" alt="slide"></td>
+              <td> On dessine! Que fait ce code?
+              <br><br>
+              *Petite remarque* : Tout ce qui se trouve derrière les barres obliques inversées // sont des commentaires. Ils servent à nous rappeler à nous, chers êtres humains, ce que signifie chaque ligne de code. Vous n'avez pas à copier tous les commentaires des diapositives, mais il est utile d'en ajouter au code au cas où vous souhaitiez vous souvenir de l'action du code. </td>
+            </tr><tr>
+              <td><img src="framework/img/workshop/slides/25.png" alt="slide"></td>
+              <td> Pour tout connaître à propos des fonctionnalités de Processing, ce qu'il peut faire ou ce qu'il sait déjà, nous n'avons qu'à aller ici.
+              <br><br>
+              Pendant l'atelier, si vous voulez savoir comment faire quelque chose, la référence est le premier endroit où chercher! Vous serez probablement capables de trouver ce dont vous avez besoin en cherchant des mots-clés (p. ex. si vous voulez dessiner un rectangle, cherchez « draw » ou « rectangle »).
+
+              Une ressource en français est aussi à votre disposition.
+
+              <br><br>(Montrez aux apprenantes comment utiliser Ctrl+F pour chercher des mots-clés dans la référence.)
+              <br><br>(En présentant les ressources à la classe, assurez-vous de mettre en valeur les différentes formes pouvant être dessinées avec Processing.
+              Montrez à la classe les formes de base, ou consultez [https://processing.org/tutorials/drawing/] pour obtenir des exemples et apprendre comment les créer.)
+              </td>
+            </tr><tr>
+              <td><img src="framework/img/workshop/slides/26.png" alt="slide"></td>
+              <td> (Montrez aux apprenantes où se trouve l'ellipse dans la référence. Encouragez-les à changer les nombres de chaque valeur ou montrez-leur une autre forme (p. ex. rectangle).</td>
+            </tr><tr>
+              <td><img src="framework/img/workshop/slides/27.png" alt="slide"></td>
+              <td> Ajoutons un peu de couleur! (wouhou) Vous remarquerez que les options contiennent des parenthèses avec les lettres R,G,B... Mais qu'est-ce que c'est?
+              <br><br>
+              (Affichez colorpicker.com à l'avant)
+              <br><br>
+              Q : À quelle couleur correspond (255,255,255)? R : Blanc
+              <br>
+              Q : À quelle couleur correspond (0,0,0)? R : Noir
+              <br><br>
+              Les couleurs RGB s'additionnent, ce qui signifie qu'en ajoutant toutes les couleurs (255 partout), on obtient un blanc pur. Quand on enlève toutes les couleurs (0 partout), on obtient un noir de jais.</td>
+            </tr><tr>
+              <td><img src="framework/img/workshop/slides/28.png" alt="slide"></td>
+              <td> Avant de dessiner le cercle, il faut dire à l'ordinateur de quelle couleur nous le voulons. Dessinez deux cercles de couleurs différentes.
+              <br><br> *Petite remarque* : Si vous souhaitez effacer une forme que vous avez dessinée, effacez la ligne de code ou transformez-la en commentaire en lui ajoutant « // ».</td>
+            </tr><tr>
+              <td><img src="framework/img/workshop/slides/29.png" alt="slide"></td>
+              <td> (Montrez aux apprenantes comment sauvegarder.)
+              <br><br>
+              N'oubliez pas de cliquer sur « Publish » après avoir nommé votre sketch. Vous pouvez le modifier en cliquant sur l'icône « Edit » en haut pour continuer à programmer.</td>
+            </tr><tr>
+              <td><img src="framework/img/workshop/slides/30.png" alt="slide"></td>
+              <td> (Révisez les coordonnées X,Y à l'aide de l'activité hors ligne « Le crabe qui s'étire ».)
+                <br><br>
+                Processing peut suivre les coordonnées x,y de la souris et utiliser cette valeur (nombre) dans le sketch.
+                <br><br>
+                Par exemple, nous pouvons prendre la coordonnée y de notre souris et utiliser celle-ci comme largeur de notre cercle. Plus nous nous rapprocherons du haut du canevas, plus le cercle sera petit. Plus nous descenderons (et le Y augmentera), notre cercle grossira. Essayez-le!</td>
+            </tr><tr>
+              <td><img src="framework/img/workshop/slides/31.png" alt="slide"></td>
+              <td> Avez-vous remarqué les deux symboles « égal »? Quand nous utilisons un symbole « égal », nous disons au programme que quelque chose égale quelque chose d'autre. Toutefois, si l'on utilise deux symboles « égal », ==, nous *demandons* à l'ordinateur si quelque chose est égal à quelque chose d'autre. (Le programme vérifie si la valeur est vraie.)
+              <br><br>
+              Q : Comment appelle-t-on une expression qui demande à l'ordinateur si quelque chose est vrai (true) ou faux (false)?
+              R : Une expression booléenne.</td>
+            </tr><tr>
+              <td><img src="framework/img/workshop/slides/32.png" alt="slide"></td>
+              <td> (Donnez aux apprenantes quelques minutes pour résoudre le problème elles-mêmes. Si quelqu'un trouve la solution, demandez-lui d'aller à l'avant et d'expliquer sa réponse au groupe. Consultez la diapositive suivante pour voir une solution possible.)</td>
+            </tr><tr>
+              <td><img src="framework/img/workshop/slides/33.png" alt="slide"></td>
+              <td> Nous dessinons un nouvel arrière-plan vide par-dessus notre canevas peint.</td>
+            </tr><tr>
+              <td><img src="framework/img/workshop/slides/34.png" alt="slide"></td>
+              <td> (Rappelez à tout le monde de sauvegarder et de cliquer sur « Publish », encore une fois.)</td>
+            </tr><tr>
+              <td><img src="framework/img/workshop/slides/35.png" alt="slide"></td>
+              <td> Vous souvenez-vous de « boîte »? Quelle valeur avons-nous donné à cette variable? (trois!)
+              <br><br>
+              Quelqu'un peut deviner à quoi ressemble cette ligne de code? (Nommez la variable et assignez-lui un nombre, voir la réponse sur la diapositive suivante.)</td>
+            </tr><tr>
+              <td><img src="framework/img/workshop/slides/36.png" alt="slide"></td>
+              <td>Le programme doit connaître la nouvelle variable avant d'activer la fonction « draw » : mettez la variable en haut (int grossir = 1;).
+              <br><br>
+              Ensuite, nous devons remplacer un nombre par « grossir » à l'intérieur de notre fonction de pinceau (paintbrush).
+              <br><br>
+              Chaque fois que la fonction « draw » se répète, nous voulons que « grossir » augmente (que le nombre grossisse) pour créer un effet de pinceau qui grossit. (grossir = grossir + 1;)
+              <br><br>
+              Finalement, si nous voulons que la taille du pinceau redevienne comme avant, nous pouvons faire en sorte que « grossir » égale 1 quand nous effaçons l'arrière-plan dans la fonction « draw ». (grossir = 1;) </td>
+            </tr><tr>
+              <td><img src="framework/img/workshop/slides/37.png" alt="slide"></td>
+              <td> Changeons un peu les choses! Grâce à la fonction random(), nous pouvons obtenir un nombre au hasard.
+              <br><br>
+              Q :  Quelle est la valeur (le nombre) la plus élevée de RGB? R : 255.
+              <br><br>
+              Pour que notre pinceau prenne les couleurs de l'arc-en-ciel (au hasard), nous n'avons qu'à remplacer la valeur fill (« remplir ») par random(255).
+              <br><br>
+              p. ex. fill(random(255),random(255),random(255))</td>
+            </tr>
+        </table>
+
+        <br>
+        #Séance de programmation individuelle
+
+        * Donnez du temps aux apprenantes pour modifier et continuer le code de l'activité du pinceau (15 à 20 minutes)
+        * Choisissez une activité de la <a href="http://bit.ly/liste-d-activités-processing">liste d'activités</a>. Une version française est disponible. Activité recommandée : « Création d'emoji ». (Si vous choisissez une autre activité, assurez-vous de copier-coller les étapes et la solution dans les diapositives avant l'atelier.)
+        * Aidez les apprenantes en créant un nouveau projet avec elles (Cliquez sur l'icône de OpenProcessing, puis sur « + Create a Sketch »).
+        * Aidez-les à démarrer leur projet en grand groupe : demandez à des volontaires de venir à l'avant pour montrer au groupe comment préparer le sketch, par exemple.
+        * Faites les étapes ensemble et laissez-les diapositives affichées à l'écran.
+        * Prenez le pouls du groupe toutes les 10 minutes pour voir s'il y a des questions. Si possible, demandez aux apprenantes de présenter leurs solutions à l'avant.
+        * Rappelez aux apprenantes de sauvegarder souvent!
+        * Accordez les 10 dernières minutes au partage des projets. Suggestions : faites venir des volontaires à l'avant. Si vous manquez de temps, organisez un « vernissage » : les apprenantes laisseront leur projet ouvert sur leur ordinateur, puis elles se lèveront et feront le tour de la classe pour regarder les créations des autres.
+
+        <br>
+        ##Activité hors ligne (facultative)
+
+        Si les apprenantes ont besoin de prendre une pause, accordez-leur 10 minutes que ce soit pour aller à la salle de bains, boire de l'eau ou manger une collation. Vous avez aussi le choix de faire une activité hors ligne au milieu de l'atelier pour leur permettre de se dégourdir les jambes. Ces activités prennent environ 10 minutes, et vous pouvez en choisir une parmi la <a href="http://bit.ly/guide-pour-les-enseignants-doc">liste d'activités hors ligne</a> (version française disponible). Activité recommandée : « Le robot ».
+
+        <br>
+        #Script de fermeture
+
+        Qui peut me nommer une chose qu'il a apprise aujourd'hui? (<strong>Consultez la diapositive n°46 pour avoir des exemples</strong>.) Si personne ne lève la main, vous pouvez demander à une apprenante qui était particulièrement engagée pendant l'atelier de dire un mot ou vous pouvez repasser certaines notions clés de l'atelier.)
+
+        Tout le monde a fait un excellent travail aujourd'hui. Nous sommes très impressionnés par vos projets!
+
+        Si vous souhaitez en savoir plus à propos de la programmation, de la conception et de la technologie, visitez notre site kidslearningcode.com pour savoir quand se dérouleront nos prochains ateliers et vous abonner à notre liste d'envoi. (Nommez le prochain atelier et faites-en une petite description.)
+
+        Avant de partir, applaudissons chaleureusement nos mentors!
+
+        Merci beaucoup! Nous espérons vous voir dans un nouvel atelier très bientôt!
+       </script>
+    </section>
+
+<!--Diapositives supplémentaires liées à la table des matières.-->
+
+<section class="slide" data-toc data-markdown>
+  <script type="text/template">
+    #Utilisation de Processing
+
+    Processing utilise un langage inspiré du Java. Il est fréquemment employé dans les arts numériques, les nouveaux médias et la conception visuelle. L'environnement lui-même sert à programmer dans ce que l'on appelle le Sketchbook, où des programmes peuvent être sauvegardés et visualisés instantanément. Pendant cet atelier, les sketches seront sauvegardés en ligne au <a href="https://www.openprocessing.org/">openprocessing.org</a> avec Processing.js. Voici quelques ressources pour commencer :
+
+    * Processing : <a href="https://processing.org/reference/">Référence officielle en anglais</a>. <a href="https://fr.flossmanuals.net/processing/introduction/">Référence non officielle en français</a>
+    * <a href="https://processing.org/download">Télécharger Processing</a> (option hors ligne, si la version en ligne n'est pas disponible)
+    * Processing.js : <a href="http://processingjs.org/articles/p5QuickStart.html#quickstart">Guide de démarrage</a> (en anglais)
+    * Consulter des <a href="https://www.openprocessing.org/browse#">exemples</a> dans OpenProcessing
+
+  </script>
+</section>
+
+
+<section class="slide" data-toc data-markdown>
+  <script type="text/template">
+    #Ordre du jour
+
+    ![intro icon](framework/img/workshop/intro-icon2.png) Introduction (30 minutes)
+
+    ![code icon](framework/img/workshop/code-icon2.png) Programmation en groupe (1 heure)
+
+    ![laptop icon](framework/img/workshop/laptop-icon2.png) Séance de programmation individuelle (1,5 heure)
+  </script>
+</section>
+
+
+<section class="slide" data-toc data-markdown>
+  <script type="text/template">
+    #Introduction
+
+    ##Script d'ouverture
+
+    Bienvenue à l'atelier de Kids Learning Code « L'art génératif avec Processing »! Nous sommes contents que vous soyez là et nous espérons que vous êtes prêts à apprendre beaucoup de choses.
+
+        Y a-t-il des gens qui ont déjà assisté à l'un de nos ateliers ou participé à l'un de nos camps?
+        (Si certaines apprenantes lèvent la main, demandez-leur quels sont les ateliers auxquels elles ont participé.)
+
+        Nous avons commencé à organiser des ateliers et des camps pour les filles dans le cadre du programme Girls Learning Code en 2012. À la demande de parents ayant des garçons, nous avons démarré Kids Learning Code en 2013. Depuis, nous sommes présents dans plus de 29 villes du Canada et avons enseigné la programmation à plus de 19 000 enfants!
+
+        Avant de commencer l'atelier, voici quelques points à aborder :
+
+        * <strong>Salle de bain :</strong> Qui sait où sont les toilettes? (Demandez aux apprenantes de préciser leur emplacement.) Si vous avez besoin d'aller aux toilettes, amenez une partenaire avec vous.
+        * <strong>Boire de l'eau :</strong> Si vous avez amené une bouteille d'eau, vous pouvez la garder sur votre bureau, mais assurez-vous de garder le couvercle fermé. Si vous n'avez pas de bouteille d'eau, les mentors peuvent aller chercher un verre d'eau pour vous plus tard à condition que vous gardiez le verre loin des ordinateurs.
+        * <strong>Pause / collation :</strong> Nous prendrons une pause de 10 minutes pour manger une collation ou nous dégourdir les jambes. Si vous avez une collation (sans arachides), mangez-la à l'avant de la classe, puis nettoyez les miettes et jetez l'emballage quand vous avez terminé.
+
+    ##Diapositives d'introduction
+
+    <table style="font-size:2rem;">
+        <tr>
+          <td><strong style="background:#00a076; color:white; font-size:3.2rem;">Diapositives</strong></td>
+          <td><strong style="background:#00a076; color:white; font-size:3.2rem;">Notes</strong></td>
+        </tr>
+        <tr>
+          <td><img src="framework/img/workshop/slides/1.png" alt="slide"></td>
+          <td> J'aimerais vous présenter des gens très importants pour nous : les mentors!
+          <br>
+          <i>Demandez aux mentors de vous rejoindre à l'avant de la classe, de dire leur nom et de nommer l'un de leurs sites ou jeux préférés.</i>
+          <br><br>
+          Les mentors seront là pour vous aider si vous avez des problèmes. N'hésitez pas à leur poser des questions en cas de pépin, ou à leur montrer vos super projets!</td>
+        </tr>
+        <tr>
+          <td><img src="framework/img/workshop/slides/2.png" alt="slide"></td>
+          <td> (Après avoir choisi l'activité, ajoutez-en le titre dans cette diapositive.)</td>
+        </tr>
+        <tr>
+          <td><img src="framework/img/workshop/slides/3.png" alt="slide"></td>
+          <td>
+            <ol>
+                <li><strong>Demandez de l'aide</strong> : Si vous êtes coincées ou avez des problèmes, travaillez avec votre voisine ou levez la main pour poser des questions à la formatrice ou à un mentor.
+                <li><strong>Soyez présentes</strong>: Nous souhaitons vraiment que vous appreniez beaucoup pendant l'atelier. Assurez-vous de prêter attention au cours et de suivre pendant les activités.
+                <li><strong>Faites de votre mieux</strong>: Même les meilleurs programmeurs ont parfois de la difficulté. Nous ne nous attendons pas à ce tout soit parfait la première fois, mais nous voulons que vous fassiez de votre mieux. N'ayez pas peur d'essayer de nouvelles choses et de vous tromper!</td>
+              </ol>
+        </tr>
+        <tr>
+          <td><img src="framework/img/workshop/slides/4.png" alt="slide"></td>
+          <td> (Écouter 2 ou 3 réponses)</td>
+        </tr>
+        <tr>
+          <td><img src="framework/img/workshop/slides/5.png" alt="slide"></td>
+          <td> (Le temps idéal pour l'activité hors ligne « Le robot »)</td>
+        </tr>
+        <tr>
+          <td><img src="framework/img/workshop/slides/6.png" alt="slide"></td>
+          <td> Qui a entendu parler de Processing ou l'a déjà utilisé?</td>
+        </tr>
+        <tr>
+          <td><img src="framework/img/workshop/slides/7.png" alt="slide"></td>
+          <td> Aujourd'hui, nous créerons des oeuvres numériques dont l'apparence peut être modifiée par l'utilisateur, comme dans cette oeuvre-ci.</td>
+        </tr>
+        <tr>
+          <td><img src="framework/img/workshop/slides/8.png" alt="slide"></td>
+          <td> (Écouter 2 ou 3 réponses)</td>
+        </tr>
+        <tr>
+          <td><img src="framework/img/workshop/slides/9.png" alt="slide"></td>
+          <td> Voici quelques exemples d'art génératif. Les exemples ont-ils quelque chose en commun?</td>
+        </tr>
+        <tr>
+          <td><img src="framework/img/workshop/slides/10-2.png" alt="slide"></td>
+          <td> (Écouter 2 ou 3 réponses)</td>
+        </tr><tr>
+          <td><img src="framework/img/workshop/slides/11.png" alt="slide"></td>
+          <td> Q : Que veut dire l'expression à « source ouverte » ou « open source »? (R : Elle désigne quelque chose de gratuit (comme un logiciel ou un site) pouvant être modifié par tout le monde.)
+          <br><br>
+          Q : Quand nous dessinons un cercle sur papier, est-il toujours parfait? Quand l'ordinateur dessine un cercle pour nous, est-il toujours parfait?</td>
+        </tr><tr>
+          <td><img src="framework/img/workshop/slides/12-2.png" alt="slide"></td>
+          <td> Le premier exemple est ce à quoi nous pensons quand nous faisons des graphiques en mathématiques. Notre canevas dans Processing est un peu différent. Il ressemble au deuxième exemple, où le point de départ est en haut à gauche.
+          </td>
+        </tr><tr>
+          <td><img src="framework/img/workshop/slides/13.png" alt="slide"></td>
+          <td> Processing a été créé avec des actions préprogrammées, c'est-à-dire, des fonctions. Par exemple, il comprend « setup » (préparation) et « draw » (dessiner), car il a été programmé pour comprendre ces actions.</td>
+        </tr><tr>
+          <td><img src="framework/img/workshop/slides/14.png" alt="slide"></td>
+          <td> Q : Qu'est-ce qu'une séquence?
+          <br> R : L'ordre selon lequel des événements se déroulent. (Premièrement, A. Puis, B. Ensuite, C. Ainsi de suite.)
+          <br><br>
+          Q : Si l'on dessine un visage, par exemple, quel est le premier élément à dessiner? (R : Premièrement, la tête / n'importe quoi en arrière-plan. Puis, les yeux, le nez, etc.)</td>
+        </tr><tr>
+          <td><img src="framework/img/workshop/slides/15.png" alt="slide"></td>
+          <td> Les ordinateurs communiquent en binaire, un langage composé de « 1 » et de « 0 ». Habituellement, 1 = vrai, 0 = faux.
+          <br><br>
+          Exemples d'expressions :
+          <br>SI il pleut...   SINON...
+          <br>SI j'ai faim...  SINON...
+          <br>SI c'est l'été...   SINON...
+          </td>
+        </tr><tr>
+          <td><img src="framework/img/workshop/slides/16.png" alt="slide"></td>
+          <td> Pensez à l'algèbre en mathématiques : il faut trouver la solution de x. Dans ce cas-ci, nous décidons de la valeur de x et l'ordinateur se souvient de cette valeur pour nous.</td>
+        </tr><tr>
+          <td><img src="framework/img/workshop/slides/17.png" alt="slide"></td>
+          <td> Ici, nous créons une nouvelle variable, qui est un nombre entier (un « integer », alias « int »), et nous lui donnons la valeur de 3.
+          <br><br>
+          (Demandez à tout le monde de se lever et de faire les actions en grand groupe, p. ex. sauter 3 fois tous ensemble)</td>
+        </tr><tr>
+          <td><img src="framework/img/workshop/slides/18.png" alt="slide"></td>
+          <td> Avant de commencer à programmer dans Processing, voici quelques rappels :</td>
+        </tr>
+      </table>
+
+  </script>
+</section>
+
+
+<section class="slide" data-toc data-markdown>
+  <script type="text/template">
+    #Programmation en groupe
+
+    * Faites chaque étape à l'aide des diapositives (après « On programme! ») et demandez au groupe de suivre sur leur ordinateur.
+    * Assurez-vous que tout le monde sélectionne le mode « Processing.js » (en haut, sous « Settings »).
+    * S'il y a un tableau blanc, écrivez-y les fonctions principales pendant les étapes pour s'y référer pendant la séance de programmation (ou demandez à un mentor de les écrire). <i>Révisez les raccourcis de clavier (ctrl+C, ctrl+V, ctrl+F) et affichez-les à l'avant.</i>
+    * Pendant la programmation en groupe, ouvrez openprocessing.org dans un autre onglet, et copier-collez le texte après chaque étape. Cliquez sur « Run » (l'icône de lecture) pour visualiser le tout.
+    * Gardez le document des <a href="https://docs.google.com/document/d/1ByGxNxk3TQOFi2SX4z99EekIv7sFyjZ5Qs21VJ265SQ/edit?usp=sharing">défis de programmation</a> à portée de main pour les apprenantes avancées.
+    * Enseignez aux apprenantes comment sauvegarder un projet (« Save » > Nom du projet > « Submit ») et rappelez-leur de sauvegarder leur travail très souvent!
+
+    ##Diapositives pour la programmation en groupe
+
+    <table style="font-size:2rem;">
+        <tr>
+          <td><strong style="background:#00a076; color:white; font-size:3.2rem;">Diapositives</strong></td>
+          <td><strong style="background:#00a076; color:white; font-size:3.2rem;">Notes</strong></td>
+        </tr>
+        <tr>
+          <td><img src="framework/img/workshop/slides/19.png" alt="slide"></td>
+          <td> C'est le temps de programmer en groupe!</td>
+        </tr><tr>
+          <td><img src="framework/img/workshop/slides/20.png" alt="slide"></td>
+          <td> Nous utiliserons OpenProcessing pour enregistrer nos sketches Processing. OpenProcessing est un environnement en ligne gratuit servant à partager ses créations numériques et à regarder les créations des autres. </td>
+        </tr><tr>
+          <td><img src="framework/img/workshop/slides/21-2.png" alt="slide"></td>
+          <td> (Affichez cette diapositive pendant que les apprenantes se connectent.)</td>
+        </tr><tr>
+          <td><img src="framework/img/workshop/slides/22-2.png" alt="slide"></td>
+          <td> *Très important* : Assurez-vous de sélectionner le mode « Processing.js » (sous « Settings »). Comme le code initial P5.js ne fonctionnera plus, nous pouvons l'effacer.</td>
+        </tr><tr>
+          <td><img src="framework/img/workshop/slides/23-2.png" alt="slide"></td>
+          <td> Tapez ce code, puis cliquez sur « Run » (l'icône de lecture en haut). Ainsi, nous préparerons notre canevas.
+          <br><br>
+          Remplacez les « 600 » par un autre nombre.</td>
+        </tr><tr>
+          <td><img src="framework/img/workshop/slides/24-2.png" alt="slide"></td>
+          <td> On dessine! Que fait ce code?
+          <br><br>
+          *Petite remarque* : Tout ce qui se trouve derrière les barres obliques inversées // sont des commentaires. Ils servent à nous rappeler à nous, chers êtres humains, ce que signifie chaque ligne de code. Vous n'avez pas à copier tous les commentaires des diapositives, mais il est utile d'en ajouter au code au cas où vous souhaitiez vous souvenir de l'action du code. </td>
+        </tr><tr>
+          <td><img src="framework/img/workshop/slides/25.png" alt="slide"></td>
+          <td> Pour tout connaître à propos des fonctionnalités de Processing, ce qu'il peut faire ou ce qu'il sait déjà, nous n'avons qu'à aller ici.
+          <br><br>
+          Pendant l'atelier, si vous voulez savoir comment faire quelque chose, la référence est le premier endroit où chercher! Vous serez probablement capables de trouver ce dont vous avez besoin en cherchant des mots-clés (p. ex. si vous voulez dessiner un rectangle, cherchez « draw » ou « rectangle »). Une ressource en français est aussi à votre disposition.
+          <br><br>(Montrez aux apprenantes comment utiliser Ctrl+F pour chercher des mots-clés dans la référence.)
+          <br><br>(En présentant les ressources à la classe, assurez-vous de mettre en valeur les différentes formes pouvant être dessinées avec Processing.
+          Montrez à la classe les formes de base, ou consultez [https://processing.org/tutorials/drawing/] pour obtenir des exemples et apprendre comment les créer.)
+          </td>
+        </tr><tr>
+          <td><img src="framework/img/workshop/slides/26.png" alt="slide"></td>
+          <td> (Montrez aux apprenantes où se trouve l'ellipse dans la référence. Encouragez-les à changer les nombres de chaque valeur ou montrez-leur une autre forme (p. ex. rectangle).</td>
+        </tr><tr>
+          <td><img src="framework/img/workshop/slides/27.png" alt="slide"></td>
+          <td> Ajoutons un peu de couleur! (wouhou) Vous remarquerez que les options contiennent des parenthèses avec les lettres R,G,B... Mais qu'est-ce que c'est?
+          <br><br>
+          (Affichez colorpicker.com à l'avant)
+          <br><br>
+          Q : À quelle couleur correspond (255,255,255)? R : Blanc
+          <br>
+          Q : À quelle couleur correspond (0,0,0)? R : Noir
+          <br><br>
+          Les couleurs RGB s'additionnent, ce qui signifie qu'en ajoutant toutes les couleurs (255 partout), on obtient un blanc pur. Quand on enlève toutes les couleurs (0 partout), on obtient un noir de jais.</td>
+        </tr><tr>
+          <td><img src="framework/img/workshop/slides/28.png" alt="slide"></td>
+          <td> Avant de dessiner le cercle, il faut dire à l'ordinateur de quelle couleur nous le voulons. Dessinez deux cercles de couleurs différentes.
+          <br><br> *Petite remarque* : Si vous souhaitez effacer une forme que vous avez dessinée, effacez la ligne de code ou transformez-la en commentaire en lui ajoutant « // ».</td>
+        </tr><tr>
+          <td><img src="framework/img/workshop/slides/29.png" alt="slide"></td>
+          <td> (Montrez aux apprenantes comment sauvegarder.)
+          <br><br>
+           N'oubliez pas de cliquer sur « Publish » après avoir nommé votre sketch. Vous pouvez le modifier en cliquant sur l'icône « Edit » en haut pour continuer à programmer.</td>
+        </tr><tr>
+          <td><img src="framework/img/workshop/slides/30.png" alt="slide"></td>
+          <td> (Révisez les coordonnées X,Y à l'aide de l'activité hors ligne « Le crabe qui s'étire ».)
+            <br><br>
+            Processing peut suivre les coordonnées x,y de la souris et utiliser ce nombre dans notre sketch.
+            <br><br>
+            Par exemple, nous pouvons prendre la coordonnée y de notre souris et utiliser celle-ci comme largeur de notre cercle. Par conséquent, plus nous nous rapprochons du haut du canevas, plus le cercle sera petit. Plus nous descendons (et le Y augmente), notre cercle grossit. Essayez-le! </td>
+        </tr><tr>
+          <td><img src="framework/img/workshop/slides/31.png" alt="slide"></td>
+          <td> Avez-vous remarqué les deux symboles « égal »? Quand nous utilisons un symbole « égal », nous disons au programme que quelque chose égale quelque chose d'autre. Toutefois, si l'on utilise deux symboles « égal » ==, nous *demandons* à l'ordinateur si quelque chose est égal à quelque chose d'autre. (Le programme vérifie si la valeur est vraie.)
+          <br><br>
+          Q : Comment appelle-t-on une expression qui demande à l'ordinateur si quelque chose est vrai (true) ou faux (false)? R : Une expression booléenne.</td>
+        </tr><tr>
+          <td><img src="framework/img/workshop/slides/32.png" alt="slide"></td>
+          <td> (Donnez aux apprenantes quelques minutes pour résoudre le problème elles-mêmes. Si quelqu'un trouve la solution, demandez-lui d'aller à l'avant et d'expliquer sa réponse au groupe. Consultez la diapositive suivante pour voir une solution possible.)</td>
+        </tr><tr>
+          <td><img src="framework/img/workshop/slides/33.png" alt="slide"></td>
+          <td> Nous dessinons un nouvel arrière-plan vide par-dessus notre canevas peint</td>
+        </tr><tr>
+          <td><img src="framework/img/workshop/slides/34.png" alt="slide"></td>
+          <td> (Rappelez à tout le monde de sauvegarder et de cliquer sur « Publish » encore.)</td>
+        </tr><tr>
+          <td><img src="framework/img/workshop/slides/35.png" alt="slide"></td>
+          <td> Vous souvenez-vous de « boîte »? Quelle valeur avons-nous donné à cette variable? (trois!)
+          <br><br>
+          Quelqu'un peut deviner à quoi ressemble cette ligne de code? (Nommez la variable et assignez-lui un nombre, voir la réponse sur la diapositive suivante.)</td>
+        </tr><tr>
+          <td><img src="framework/img/workshop/slides/36.png" alt="slide"></td>
+          <td>Le programme doit connaître la nouvelle variable avant d'actionner la fonction « draw » : mettez la variable en haut (int grossir = 1;).
+          <br><br>
+          Ensuite, nous devons remplacer un nombre par « grossir » à l'intérieur de notre fonction de pinceau (paintbrush).
+          <br><br>
+          Chaque fois que la fonction « draw » se répète, nous voulons que « grossir » augmente (que le nombre grossisse)pour créer un effet de pinceau qui grossit. (grossir = grossir + 1;)
+          <br><br>
+          Finalement, si nous voulons que la taille du pinceau redevienne comme avant, nous pouvons faire en sorte que « grossir » égale 1 quand nous effaçons l'arrière-plan dans la fonction « draw ». (grossir = 1;) </td>
+        </tr><tr>
+          <td><img src="framework/img/workshop/slides/37.png" alt="slide"></td>
+          <td> Changeons un peu les choses! Grâce à la fonction random(), nous pouvons obtenir un nombre au hasard.
+          <br><br>
+          Q :  Quelle est la valeur (le nombre) la plus élevée de RGB? R : 255.
+          <br><br>
+          Pour que notre pinceau prenne les couleurs de l'arc-en-ciel (au hasard), nous n'avons qu'à remplacer la valeur fill (« remplir ») par random(255).
+          <br><br>
+          p. ex. fill(random(255),random(255),random(255))</td>
+        </tr>
+    </table>
+
+    </script>
+  </section>
+
+<section class="slide" data-toc data-markdown>
+  <script type="text/template">
+    #Séance de programmation induviduelle
+
+      * Donnez du temps aux apprenantes pour modifier et continuer le code de l'activité du pinceau (15 à 20 minutes)
+      * Choisissez une activité de la <a href="http://bit.ly/liste-d-activités-processing">liste d'activités</a>. Une version française est disponible. Activité recommandée : « Création d'emoji ». (Si vous choisissez une autre activité, assurez-vous de copier-coller les étapes et la solution dans les diapositives avant l'atelier.)
+      * Aidez les apprenantes en créant un nouveau projet avec elles (Cliquez sur l'icône de OpenProcessing, puis sur « + Create a Sketch »)
+      * Aidez-les à démarrer leur projet en grand groupe : demandez à des volontaires de venir à l'avant pour montrer au groupe comment préparer le sketch, par exemple.
+      * Faites les étapes ensemble et laissez-les diapositives affichées à l'écran.
+      * Prenez le pouls du groupe toutes les 10 minutes pour voir s'il y a des questions. Si possible, demandez aux apprenantes de présenter leurs solutions à l'avant.
+      * Rappelez aux apprenantes de sauvegarder souvent!
+      * Accordez les 10 dernières minutes au partage des projets. Recommandations : faites venir des volontaires à l'avant. Si vous manquez de temps, organisez un « vernissage » : les apprenantes laisseront leur projet ouvert sur leur ordinateur, puis elles se lèveront pour regarder les créations des autres.
+
+  </script>
+</section>
+
+
+<section class="slide" data-toc data-markdown>
+  <script type="text/template">
+   #Activité hors ligne (facultative)
+
+        Si les apprenantes ont besoin de prendre une pause, accordez-leur 10 minutes que ce soit pour aller à la salle de bains, boire de l'eau ou manger une collation. Vous avez aussi le choix de faire une activité hors ligne au milieu de l'atelier pour leur permettre de se dégourdir les jambes. Ces activités prennent environ 10 minutes, et vous pouvez en choisir une parmi la <a href="http://bit.ly/guide-pour-les-enseignants-doc">liste d'activités</a>. (version française disponible) Activité recommandée : « Le robot ».
+  </script>
+</section>
+
+
+<section class="slide" data-toc data-markdown>
+  <script type="text/template">
+    #Script de fermeture
+
+    Qui peut me nommer une chose qu'il a apprise aujourd'hui? (<strong>*Consultez la diapositive n°46 pour avoir des exemples</strong>. Si personne ne lève la main, vous pouvez demander à une apprenante qui était particulièrement engagée pendant l'atelier de dire un mot ou vous pouvez repasser certaines notions clés de l'atelier.)
+
+    Tout le monde a fait un excellent travail aujourd'hui. Nous sommes très impressionnés par vos projets!
+
+    Si vous souhaitez en savoir plus à propos de la programmation, de la conception et de la technologie, visitez notre site kidslearningcode.com pour savoir quand se dérouleront nos prochains ateliers et vous abonner à notre liste d'envoi. (Nommez le prochain atelier et faites-en une petite description.)
+
+    Avant de partir, applaudissons chaleureusement nos mentors!
+
+    Merci beaucoup! Nous espérons vous voir dans un nouvel atelier très bientôt!
+  </script>
+</section>
+
+
+   </main><!-- Section principale cls -->
+
+  <script src="framework/scripts/jquery-1.11.0.min.js"></script>
+  <script src="framework/scripts/slideshow.js"></script>
+
+  <!-- Enlevez les commentaires des modules dont vous avez besoin -->
+  <script src="framework/scripts/plugins/css-edit.js"></script>
+  <script src="framework/scripts/plugins/css-snippets.js"></script>
+  <script src="framework/scripts/plugins/css-controls.js"></script>
+  <!-- <script src="plugins/code-highlight.js"></script>-->
+
+  <script src="framework/scripts/plugins/markdown/marked.js"></script>
+  <script src="framework/scripts/plugins/markdown/markdown.js"></script>
+  <script src="framework/scripts/plugins/highlight/highlight-8.4.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="framework/scripts/llc.js"></script>
+  <script>
+    var slideshow = new SlideShow();
+
+    // Regroupe tous les éléments .snippet
+    var snippets = document.querySelectorAll('.snippet');
+    for(var i=0; i<snippets.length; i++) {
+      new CSSSnippet(snippets[i]);
+    }
+  </script>
+</body>
+</html>

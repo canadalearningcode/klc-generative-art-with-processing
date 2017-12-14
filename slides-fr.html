@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Kids Learning Code</title>
+  <link rel="stylesheet" href="framework/css/slideshow.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/fonts.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/highlightjs/github.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/styles.css" data-noprefix>
+  <link rel="shortcut icon" href="framework/img/favicon.ico">
+
+  <!-- S'occupe des préfixes CSS3 -->
+  <script src="framework/scripts/prefixfree.min.js"></script>
+
+  <!-- Ouvre tous les liens dans une nouvelle fenêtre -->
+  <base target="_blank">
+</head>
+
+<!-- Barre de progression / temps : indiquez la durée de la présentation à l'aide de « data-duration » en minutes. -->
+<body class="en" data-duration="360">
+
+  <!--Diapositive 1-->
+  <main>
+    <section class="slide welcome highlight">
+      <h1><img class="logo-stacked" src="framework/img/klc-logo-stacked-white.png" alt="Ladies Learning Code logo">Bienvenue!</h1>
+
+      <div class="instructions">
+        <!-- AJOUTEZ LES INFORMATIONS DU WI-FI ICI -->
+        <h2>Branchez- <br>vous</h2>
+        <p><strong>Wi-Fi :</strong> réseau Wi-Fi</p>
+        <p><strong>Mot de passe :</strong> mot de passe Wi-Fi</p>
+        <hr>
+
+
+
+    </div>
+
+      <footer>
+        <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
+        <p class="left">Diapositives crées par <a href="http://christinatruong.com">Christina Truong</a> pour <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Ladies Learning Code</a></p>
+        <p class="right">Utilisez les flèches gauche <span class="arrow">&#8592;</span> et droite <span class="arrow">&#8594;</span> pour naviguer</p>
+      </footer>
+    </section>
+
+    <!--Diapositive 2-->
+    <section class="slide intro">
+      <img class="logo" src="framework/img/klc-logo-white.png" alt="Ladies Learning Code logo">
+      <h1 class="heading-bg">
+        <span>Art génératif<br>
+        avec Processing</span>
+      </h1>
+
+      <ul>
+        <li><a href="http://twitter.com/learningcode">@learningcode</a></li>
+        <li><a href="https://twitter.com/search?q=%23kidslearningcode&src=typd">#kidslearningcode</a></li>
+      </ul>
+
+      <div class="sponsor">
+        <p>En partenariat avec<br> <img src="framework/img/telus-logo-white.svg" alt="Telus"></p>
+      </div>
+      <footer>
+        <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
+        <p class="left">Contenu créé par Kassandra Lenters pour <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Ladies Learning Code</a></p>
+        <p class="right">Naviguez avec la flèche gauche <span class="arrow">&#8592;</span> et droite <span class="arrow">&#8594;</span></p>
+      </footer>
+    </section>
+
+<!--Diapositive 3-->
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        #Introduction
+      </script>
+    </section>
+
+<!--Diapositive 4-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Table des matières
+
+        <div class="table-of-contents"></div>
+
+          <!-- Intro + exemples de projet + invité (10 h)
+
+        Recherche d'idées + maquette du projet (10 h 15)
+
+        Initiation au HTML et au CSS (10 h 45)
+
+        Dîner (12 h 30)
+
+        Création! (13 h 15)
+
+        Démos + publication (15 h 30) -->
+
+       </script>
+    </section>
+
+<!--Diapositive 5-->
+       <!-- Insérez l'ordre du jour de l'atelier ici -->
+    <section class= "slide" data-markdown>
+      <script type="text/template">
+        #Ordre du jour
+
+        Introduction à l'art génératif
+
+        Programmer dans Processing
+
+        Pause
+
+        Activité d'art interactif : <!--Insérez le nom de l'activité ici -->
+
+      </script>
+    </section>
+
+    <!--Diapositive 6-->
+    <section class="slide centered" data-markdown>
+      <script type="text/template">
+       ![Bannière Code du programmeur](framework/img/workshop/scroll2.png)
+
+       #LE CODE DE LA PROGRAMMEUSE
+         ## 1. DEMANDEZ DE L'AIDE  <!-- .element: class="delayed" -->
+         ## 2. SOYEZ PRÉSENTES  <!-- .element: class="delayed" -->
+         ## 3. FAITES DE VOTRE MIEUX  <!-- .element: class="delayed" -->
+      </script>
+    </section>
+
+<!--Diapositive 7-->
+    <section class="slide title" data-toc data-markdown>
+     <script type="text/template">
+       # Qu'est-ce que le code?
+     </script>
+    </section>
+
+<!--Diapositive 8-->
+    <section class="slide" data-markdown>
+     <script type= "text/template">
+       #Le code, c'est...
+       ## UN ENSEMBLE DE DIRECTIVES DISANT À L'ORDINATEUR QUOI FAIRE
+
+       ![Robot qui court - gif](framework/img/workshop/runningrobot.gif)
+       ![Robot qui danse - gif](framework/img/workshop/dancingrobot.gif)
+       ![Robot qui mange - gif](framework/img/workshop/eatingrobot.gif)
+       ![Robot qui danse - gif](framework/img/workshop/dancingrobot2.gif)
+       ![Robot qui danse - gif](framework/img/workshop/bluerobot.gif)
+       ![Robot qui danse - gif](framework/img/workshop/partyrobot.gif)
+
+       <p> En programmation, un ensemble de directives s'appelle un <strong style="color:#00a076;">algorithme</strong>.</p><!-- .element: class="delayed" -->
+
+     </script>
+    </section>
+
+<!--Diapositive 9-->
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        # Le projet du jour
+        ## Nous apprendrons comment créer de l'art génératif avec Processing
+      </script>
+    </section>
+
+<!--Diapositive 10-->
+    <section class="slide centered" data-markdown>
+      <script type="text/template">
+        #Le projet du jour
+        <iframe src="https://www.openprocessing.org/sketch/254313/embed/" width="500" height="500"></iframe>
+
+      </script>
+    </section>
+
+<!--Diapositive 11-->
+    <section class="slide title" data-toc data-markdown>
+      <script type="text/template">
+        # Qu'est-ce que l'art génératif?
+      </script>
+    </section>
+
+<!--Diapositive 12-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # L'art génératif
+
+        * Une oeuvre créée avec du code
+        * Comprend des opérations mathématiques
+        * « Génère », ou change avec le temps
+
+        ![http://giphy.com/gifs/processing-hypercube-phxXlMiXA1Xjy](framework/img/workshop/shapeshift.gif)
+        ![http://giphy.com/gifs/processing-attempt-kinematics-ini6gpWb8ZbQ4](framework/img/workshop/bounce.gif)
+        ![http://giphy.com/gifs/art-animated-loop-GXo1dHx8txq4o](framework/img/workshop/turn.gif)
+
+
+        ---
+        <div class="dropdown">
+          <button class="dropbtn">Références</button>
+          <div class="dropdown-content">
+            <a href="http://giphy.com/gifs/processing-hypercube-phxXlMiXA1Xjy">Processing - gif</a>
+            <a href="http://giphy.com/gifs/processing-attempt-kinematics-ini6gpWb8ZbQ4">Cinématique - gif</a>
+            <a href="http://giphy.com/gifs/art-animated-loop-GXo1dHx8txq4o">Rotation - gif</a>
+          </div>
+
+      </script>
+    </section>
+
+<!--Diapositive 13-->
+    <section class="slide title" data-toc data-markdown>
+      <script type="text/template">
+        # Qu'est-ce que Processing?
+      </script>
+    </section>
+
+<!--Diapositive 14-->
+    <section class="slide two-col-list" data-markdown>
+      <script type="text/template">
+      # Processing
+      * Pourquoi utiliser Processing?
+        * Il s'agit du langage et de l'environnement préféré des artistes et des concepteurs
+        * Son code source est libre (« open source »)
+        * Il sert à représenter des données visuellement
+        * Il produit des formes et des motifs parfaits
+      * ![http://giphy.com/gifs/processing-creative-coding-openprocessing-jk9L41aToGZQA](framework/img/workshop/sun.gif)
+
+        ---
+        <div class="dropdown">
+          <button class="dropbtn">Références</button>
+          <div class="dropdown-content">
+            <a href="http://giphy.com/gifs/processing-creative-coding-openprocessing-jk9L41aToGZQA">Soleil - gif</a>
+          </div>
+
+      </script>
+    </section>
+
+<!--Diapositive 15-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Pour commencer
+
+        * Les programmes de Processing s'appellent des « sketches »<!-- .element: class="delayed" -->
+        * Jetons un coup d'oeil à notre canevas!<!-- .element: class="delayed" -->
+
+        ![graphing](framework/img/workshop/graphing.png)<!-- .element: class="delayed" -->
+
+      </script>
+    </section>
+
+<!--Diapositive 16-->
+    <section class="slide two-col-list" data-markdown>
+      <script type="text/template">
+      # Fonctions
+      * Une fonction (parfois appelée une « méthode »), c'est...
+        * Une commande comprise par un ordinateur
+        * Processing a des fonctions intégrées comme <strong>setup</strong> et <strong>draw</strong> pour la préparation et le dessin
+        * Il est donc déjà programmé pour comprendre ces fonctions
+      * ![http://giphy.com/gifs/loop-infinite-paper-l0HlwKpPGceLgQC9W](framework/img/workshop/draw.gif)
+
+        ---
+        <div class="dropdown">
+          <button class="dropbtn">Références</button>
+          <div class="dropdown-content">
+            <a href="http://giphy.com/gifs/loop-infinite-paper-l0HlwKpPGceLgQC9W">Crayon - gif</a>
+          </div>
+
+      </script>
+    </section>
+
+<!--Diapositive 17-->
+    <section class="slide two-col-list" data-markdown>
+      <script type="text/template">
+      # Séquence
+
+      L'ordre est très important!
+
+      ``` processing
+      void setup() {
+        // Se passe 1 fois (au début)
+      }
+      ```
+
+      ``` processing
+      void draw() {
+        //Se passe plusieurs fois (continuellement!)
+        //Première fois
+        //Deuxième fois
+        //... et ainsi de suite!
+      }
+      ```
+
+      </script>
+    </section>
+
+<!--Diapositive 18-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Expressions conditionnelles
+
+        Les <strong>expressions conditionnelles</strong> servent à prendre des décisions selon des conditions.
+
+        * <strong>SI</strong> (IF) c'est une journée d'école... se réveiller à 7 h.
+        * <strong>SINON</strong> (ELSE)... faire la grasse matinée.
+
+        <p style="color:#00a076">Créez votre propre expression!</p><!-- .element: class="delayed" -->
+        <p style="color:#00a076">SI ... </p><!-- .element: class="delayed" -->
+        <p style="color:#00a076">SINON ... </p><!-- .element: class="delayed" -->
+
+      </script>
+    </section>
+
+<!--Diapositive 19-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Variables
+
+        Une <strong>variable</strong> est comme une boîte : elle contient des informations utiles.
+
+        Nous utilisons les <strong>variables</strong> pour suivre des éléments dans notre sketch.
+
+        <br>
+        ![variables](framework/img/workshop/box.png)
+
+        ---
+        <div class="dropdown">
+          <button class="dropbtn">Références</button>
+          <div class="dropdown-content">
+            <a href="https://pixabay.com/en/box-open-cardboard-box-cardboard-152428/">Boîte - image</a>
+          </div>
+
+        </script>
+      </section>
+
+<!--Diapositive 20-->
+      <section class="slide" data-markdown>
+        <script type="text/template">
+          #Préparons-nous!
+
+          ``` int ``` : l'abréviation d'« integer », enregistre des *nombres entiers*.
+
+          1. Nommons notre variable « <strong>boîte</strong> »
+          1. Assignons une valeur à « <strong>boîte</strong> »
+
+          ```processing
+            int boîte = 3;
+          ```
+
+          * Sauter boîte fois<!-- .element: class="delayed" -->
+          * Saluer boîte fois<!-- .element: class="delayed" -->
+          * Applaudir boîte fois<!-- .element: class="delayed" -->
+
+        </script>
+      </section>
+
+<!--Diapositive 21-->
+        <section class="slide two-col-list" data-markdown>
+          <script type="text/template">
+          # À retenir
+          * Ce qui nous importe :
+            * Séquence!
+            * Lettres majuscules
+            * Accolades {}
+            * Parenthèses ()
+            * Points-virgules ;
+          * Ce qui ne nous importe pas :
+            * Espaces
+
+          </script>
+        </section>
+
+<!--Diapositive 22-->
+    <section class="slide title" data-toc data-markdown>
+      <script type="text/template">
+        #ON PROGRAMME!
+      </script>
+    </section>
+
+<!--Diapositive 23-->
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #OpenProcessing.org : le site
+
+        Allez à l'adresse <a href="https://openprocessing.org">openprocessing.org</a> et cliquez sur « Sign In » pour vous connecter.
+
+        ![openprocessing](framework/img/workshop/openprocessing.png)
+
+      </script>
+    </section>
+
+<!--Diapositive 24-->
+    <section class="slide centered" data-toc data-markdown>
+      <script type="text/template">
+        #OpenProcessing.org : se connecter
+
+        ![signin](framework/img/workshop/signin.png)
+
+        * Nom d'utilisateur : workshops@kidslearningcode.com
+        * Mot de passe : Helloworld123
+
+      </script>
+    </section>
+
+<!--Diapositive 25-->
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        # Créer un sketch
+
+        ![settings](framework/img/workshop/settings_fr.png)
+
+      </script>
+    </section>
+
+<!--Diapositive 26-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+      # Préparons le sketch
+
+      ``` processing
+      void setup() {
+        size(600,600);
+      }
+      ```
+
+      * Dites à l'ordinateur la taille de votre canevas
+      * size(largeur,hauteur) : la largeur et la hauteur doivent être en pixels
+
+      </script>
+    </section>
+
+<!--Diapositive 27-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+      # On dessine!
+
+      ``` processing
+      void setup() { //Ceci est un commentaire
+        size(600,600); //Une seule préparation (setup) est nécessaire
+      }
+
+      void draw(){ //Dessin en boucle
+        ellipse(100,100,100,100);
+      }
+      ```
+
+      * Cliquez sur « Run » pour l'exécuter. Que se passe-t-il?
+
+      ##Rappel : vous n'avez qu'à mettre UN seul « setup » et UN seul « draw »!<!-- .element: class="delayed" -->
+
+      </script>
+    </section>
+
+<!--Diapositive 28-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Votre nouvelle meilleure amie
+
+        ##La référence!
+
+        Ouvrez le site <a href="https://processing.org/reference/">processing.org/reference</a> dans un nouvel onglet. À noter que la référence est seulement offerte en anglais, mais qu'un <a href="https://fr.flossmanuals.net/processing/introduction/">guide alternatif</a> est aussi disponible en français.
+
+        ![http://giphy.com/gifs/friends-friendship-bff-3oEdvaba4h0I536VYQ](framework/img/workshop/bff.gif)
+
+          ---
+          <div class="dropdown">
+            <button class="dropbtn">Références</button>
+            <div class="dropdown-content">
+              <a href="http://giphy.com/gifs/friends-friendship-bff-3oEdvaba4h0I536VYQ">Tape là-dedans - gif</a>
+            </div>
+
+      </script>
+    </section>
+
+<!--Diapositive 29-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+      # Dessinons des formes
+
+      ##Cercle
+      ellipse(x,y,largeur,hauteur);
+
+      ![canevas](framework/img/workshop/ellipse_fr.png)
+
+      * X et Y sont au centre du cercle
+
+      </script>
+    </section>
+
+<!--Diapositive 30-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Couleur
+
+        ```background (R,G,B);```
+
+        * R,G,B veut dire...?
+
+        <p><strong style="color:firebrick;">Rouge</strong>, <strong style="color:forestgreen;">Vert (Green)</strong>, <strong style="color:dodgerblue;">Bleu</strong></p><!-- .element: class="delayed" -->
+
+        <p>Allez à l'adresse <a href="http://colorpicker.com">colorpicker.com</a></p><!-- .element: class="delayed" -->
+
+        Quel est la valeur (nombre) la plus élevée de RGB?<!-- .element: class="delayed" -->
+
+        À quelle couleur correspond (0,0,0)?<!-- .element: class="delayed" -->
+
+      </script>
+    </section>
+
+<!--Diapositive 31-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Ajoutons de la couleur
+
+        ``` processing
+        void setup() {
+          size(600,600);
+          background(255); //Si tous les nombres sont identiques, nous n'avons besoin que d'en écrire un seul.
+        }
+
+        void draw(){
+          fill(20,200,200); //Change la couleur de la forme
+          ellipse(100,100,100,100);
+          //rect(10,10,300,100); Ajoutez « // » devant un élément pour le cacher.
+        }
+        ```
+
+        * Quel élément pouvons-nous aussi changer de couleur? Consultez la référence!<!-- .element: class="delayed" -->
+
+      </script>
+    </section>
+
+  <!--Diapositive 32-->
+      <section class="slide title" data-markdown>
+        <script type="text/template">
+          #Sauvegardez votre travail!
+          ##Cliquez sur « Save » > « Submit »
+        </script>
+      </section>
+
+<!--Diapositive 33-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #mouseMoved
+        * Cette fonction suit le mouvement de la souris!
+        * Comment distinguer les coordonnées?  En faisant l'exercice <i>Le crabe qui s’étire</i>!
+
+        ``` processing
+        void setup() {
+          size(600,600);
+          background(255);
+        }
+
+        void draw(){
+          fill(20,200,200);
+          ellipse(mouseX,mouseY,100,mouseY); //Remplacez-les par mouseX ou mouseY
+        }
+        ```
+
+      </script>
+    </section>
+
+<!--Diapositive 34-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #pinceau
+
+        * Quand voulons-nous que le pinceau dessine sur le canevas?
+        * SI (IF) le bouton de la souris est pressé! <!-- .element: class="delayed" -->
+
+        ``` processing
+        void setup(){
+          size(600,600);
+          background(255);
+        }
+
+        void draw(){
+          if(mousePressed == true){ //SI le bouton de la souris est pressé
+            // Dessiner avec le pinceau
+            fill(20,200,200);
+            noStroke();
+            ellipse(mouseX,mouseY,20,20);
+          }
+        }
+        ```
+
+      </script>
+    </section>
+
+<!--Diapositive 35-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #keyPressed
+
+        Comment tout recommencer?
+
+        Défi : SI une touche est pressée (```keyPressed```), effacer l'arrière-plan (background)
+
+        INDICE : Il y a un lien avec la <strong>séquence</strong> (quand nous dessinons l'arrière-plan)
+
+      </script>
+    </section>
+
+<!--Diapositive 36-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #keyPressed
+
+        Solution possible :
+
+        ``` processing
+        void setup(){
+          size(600,600);
+          background(255);
+        }
+
+        void draw(){
+          if(mousePressed == true){
+            fill(20,200,200);
+            noStroke();
+            ellipse(mouseX,mouseY,20,20);
+          }
+          if(keyPressed == true){ //SI une touche est pressée
+            background(255); //Dessiner un nouvel arrière-plan
+          }
+        }
+        ```
+
+      </script>
+    </section>
+
+  <!--Diapositive 37-->
+      <section class="slide title" data-markdown>
+        <script type="text/template">
+          #Sauvegardez encore!
+          ##Cliquez sur « Save » > « Submit »
+        </script>
+      </section>
+
+<!--Diapositive 38-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Variables
+
+        Faisons changer le dessin avec des variables.
+
+        1. Nommez la variable p. ex. <strong>grossir</strong> (en haut!)
+        1. Assignez une valeur (un nombre) à la variable <strong>grossir</strong>
+        1. Remplacez un nombre dans votre code par la variable <strong>grossir</strong>
+
+      </script>
+    </section>
+
+<!--Diapositive 39-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Faisons-le grossir!
+
+        Solution possible :
+
+        ``` processing
+        int grossir = 1; // (1) Nommez la variable « grossir » et assignez-lui une valeur
+
+        void setup(){
+          size(600,600);
+          background(255);
+        }
+
+        void draw(){
+          if(mousePressed == true){
+            fill(20,200,200);
+            noStroke();
+            grow = grow + 1; // (3) Faites en sorte que la variable « grossir » augmente de 1 chaque fois
+            ellipse(mouseX,mouseY,20,grow); // (2) Remplacez une valeur par « grossir »
+          }
+          if(keyPressed == true){
+            background(255);
+            grow = 1; // (4) Remettez « grossir » à 1 quand l'arrière-plan est effacé
+          }
+        }
+        ```
+
+      </script>
+    </section>
+
+<!--Diapositive 40-->
+    <section class="slide two-col-list" data-markdown>
+      <script type="text/template">
+        #C'est random
+        * ![http://giphy.com/gifs/cute-space-kawaii-3o7TKCTt7cNHg10utO](framework/img/workshop/taco.gif)
+        * Choisissez un nombre au hasard (random) à l'aide de ```random()```
+          * Cette fonction choisira un nombre entre 0 et le nombre que nous avons déterminé comme le maximum.
+          * p. ex. ```random(100)```
+          * Quel est le nombre le plus élevé que nous pouvons utiliser pour les couleurs en RGB?
+
+
+          ---
+          <div class="dropdown">
+            <button class="dropbtn">Références</button>
+            <div class="dropdown-content">
+              <a href="http://giphy.com/gifs/cute-space-kawaii-3o7TKCTt7cNHg10utO">Taco - gif</a>
+            </div>
+
+      </script>
+    </section>
+
+<!--Diapositive 41-->
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        #Sauvegardez... encore!
+        ##Cliquez sur « Save » > « Submit »
+      </script>
+    </section>
+
+<!--Diapositive 42-->
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        #Projet final
+      </script>
+    </section>
+
+<!--Diapositive 43-->
+  <section class="slide" data-markdown>
+    <script type="text/template">
+      #Création d'emoji
+
+      Exemple :
+
+      <iframe src="https://www.openprocessing.org/sketch/266635/embed/" width="500" height="500"></iframe>
+      <!-- insérez l'exemple dans l'iframe ci-dessus-->
+
+      (Cliquez pour dessiner des larmes)
+      <!--insérer les notes que vous voulez ci-dessus-->
+
+    </script>
+  </section>
+
+<!--Diapositive 44-->
+<section class="slide" data-markdown>
+  <script type="text/template">
+    #Création d'emoji<!--insérez le titre de l'activité ici-->
+    ÉTAPES :<!--insérez les étapes ci-dessous-->
+
+    * Sauvegardez votre projet et créez un nouveau sketch
+    * Préparez (setup) le sketch : choisissez une taille et une couleur d'arrière-plan
+    * Utilisez des formes pour dessiner votre propre emoji ou personnage
+    * Rendez-le interactif! Faites-le bouger, grossir ou se transformer
+    * N'oubliez pas votre meilleure amie (la <strong>référence</strong>!)
+
+    Inspirez-vous des créations des autres! Regardez-les ici : <a href="http://openprocessing.org/browse">openprocessing.org/browse</a>
+
+  </script>
+</section>
+
+<!--Diapositive 45-->
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        #DÉMOS
+      </script>
+    </section>
+
+<!--Diapositive 46-->
+    <main>
+
+      <section class="slide" data-toc data-markdown>
+        <script type="text/template">
+          # Aujourd'hui, j'ai appris que...
+
+          <p><strong>Je peux</strong> créer des algorithmes dans Processing</p><!-- .element: class="delayed" -->
+          <p><strong>Je peux</strong> dessiner des formes avec les coordonnées x,y</p><!-- .element: class="delayed" -->
+          <p><strong>Je peux</strong> utiliser des expressions conditionnelles pour rendre mon projet interactif</p><!-- .element: class="delayed" -->
+          <p><strong>Je peux</strong> utiliser des variables pour enregistrer des données et changer des éléments dans mon projet</p><!-- .element: class="delayed" -->
+          <p><strong>Je peux</strong> utiliser OpenProcessing pour continuer à PROGRAMMER!</p><!-- .element: class="delayed" -->
+
+        </script>
+      </section>
+
+<!--Diapositive 47-->
+    <!-- Dernière diapositive -->
+    <section class="slide last">
+      <h1>Merci!</h1>
+      <h2 class="heading-bg">
+        <span>L'art génératif <br>avec Processing</span>
+      </h2>
+
+      <ul>
+        <li><a href="http://twitter.com/learningcode">@learningcode</a></li>
+        <li><a href="https://twitter.com/search?q=%23kidslearningcode&src=typd">#kidslearningcode</a></li>
+      </ul>
+
+      <p class="attribution">Diapositives créées par <a href="http://christinatruong.com">Christina Truong</a> à partir de <a href="https://github.com/LeaVerou/csss">Lea Verou's SlideShow</a> et de <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>.</p>
+    </section>
+
+  </main><!-- cls main section -->
+
+  <script src="framework/scripts/jquery-1.11.0.min.js"></script>
+  <script src="framework/scripts/slideshow.js"></script>
+
+  <!-- Enlevez les modules des commentaires, au besoin -->
+  <script src="framework/scripts/plugins/css-edit.js"></script>
+  <script src="framework/scripts/plugins/css-snippets.js"></script>
+  <script src="framework/scripts/plugins/css-controls.js"></script>
+  <!-- <script src="plugins/code-highlight.js"></script>-->
+
+  <script src="framework/scripts/plugins/markdown/marked.js"></script>
+  <script src="framework/scripts/plugins/markdown/markdown.js"></script>
+  <script src="framework/scripts/plugins/highlight/highlight-8.4.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="framework/scripts/llc.js"></script>
+  <script>
+    var slideshow = new SlideShow();
+
+    // Regroupe tous les éléments .snippets
+    var snippets = document.querySelectorAll('.snippet');
+    for(var i=0; i<snippets.length; i++) {
+      new CSSSnippet(snippets[i]);
+    }
+  </script>
+</body>
+</html>
